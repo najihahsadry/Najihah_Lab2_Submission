@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<car_list>
+	<car >
+		<model>Proton Ertiga</model>
+		<type>MPV</type>
+		<price>RM 56,984</price>
+		<monthly>RM 739/month</monthly>
+		<image>img/a.jpg</image>
+	</car>
+	<car >
+		<model>Proton Exora</model>
+		<type>MPV</type>
+		<price>RM 56,940</price>
+		<monthly>RM 738/month</monthly>
+		<image>img/b.jpg</image>
+	</car>
+	<car >
+		<model>Proton Inspira</model>
+		<type>Sedan</type>
+		<price>RM 77,820</price>
+		<monthly>RM 1,009/month</monthly>
+		<image>img/c.jpg</image>
+	</car>
+	<car >
+		<model>Proton Iriz</model>
+		<type>Hatchback</type>
+		<price>RM 41,520</price>
+		<monthly>RM 538/month</monthly>
+		<image>img/d.jpg</image>
+	</car>
+		<car >
+		<model>Proton Perdana</model>
+		<type>Sedan</type>
+		<price>RM 110,120</price>
+		<monthly>RM 1,428/month</monthly>
+		<image>img/e.jpg</image>
+	</car>
+	<car >
+		<model>Proton Preve</model>
+		<type>Sedan</type>
+		<price>RM 62,570</price>
+		<monthly>RM 811/month</monthly>
+		<image>img/f.jpg</image>
+	</car>
+
+</car_list>
+

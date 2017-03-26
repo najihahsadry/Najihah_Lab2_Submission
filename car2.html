@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Sale</title>
+<script src="js/jquery-3.1.1.min.js"></script> <!-- include jquery library -->
+<link rel="stylesheet" href="css/style.css" /> <!-- call css file -->
+</head>
+
+
+<!-- AJAX using jQuery script that will make the request for the data -->
+<script>
+
+ $(document).ready(function() {
+ $.ajax({
+  type: 'GET', //request type GET to request data from specific resources
+  url: 'car_list.xml', //file location
+  dataType: 'xml', //data type expected of the server response
+  success: function(xml) { //to check whether the request is success or fail
+  
+    /*when the request made is a success*/
+   $(xml).find('car').each(function() { //traverse through each List tag and append the values of each attribute inside the tag to the DIV element.
+     $("#sales").append(
+     "<table>" +
+        "<tr>" + 
+            "<td>" + "<img src='" + $(this).find("image").text() + "' class='img_food' alt='" + "'height=200px width=250px border=1px'" + "'>" + "</td>" /*attribute image*/+
+            "<td>" + 
+            "<span>Model: " + $(this).find("model").text() + "</span><br /> " /*attribute model*/ + 
+            "<span>Type: " + $(this).find("type").text() + "</span><br />" /*attribute type*/+
+           "<span>Price: " + $(this).find("price").text() + "</span><br />" /*attribute price*/ +
+           "<span>Monthly Payment: " + $(this).find("monthly").text() + "</span><br />" /*attribute monthly*/+
+           "</td>" +
+        "</tr>" +
+     "</table>"
+
+
+    );
+   });
+  }
+ });
+});
+
+
+</script>
+
+<body>
+<div><h2>Car Sale List</h2></div>
+
+<!-- To display the extracted data from XML on the page -->
+<div id="sales"></div> 
+
+</body>
+</html> 
+
+
